@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://m513mbitluwg"
+path="res://.godot/imported/Lego yoda death sound.mp3-5a7495d87ec9336fe20d40fc2f3c7bbe.mp3str"
+
+[deps]
+
+source_file="res://res/sounds/Lego yoda death sound.mp3"
+dest_files=["res://.godot/imported/Lego yoda death sound.mp3-5a7495d87ec9336fe20d40fc2f3c7bbe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

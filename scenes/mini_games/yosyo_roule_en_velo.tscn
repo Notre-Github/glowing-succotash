@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://cjr3jsefklw5t"]
+
+[ext_resource type="Script" path="res://src/yosyo_roule_en_velo/main.gd" id="1_vnocl"]
+[ext_resource type="AudioStream" uid="uid://ctpycyhsvmxxd" path="res://res/sounds/musics/F O C U S.mp3" id="2_436d4"]
+[ext_resource type="AudioStream" uid="uid://m513mbitluwg" path="res://res/sounds/Lego yoda death sound.mp3" id="3_7up6h"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_17pgf"]
+font_size = 128
+
+[sub_resource type="Gradient" id="Gradient_gwvqo"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.196078, 0.196078, 0.215686, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_78vdv"]
+gradient = SubResource("Gradient_gwvqo")
+width = 1080
+
+[sub_resource type="LabelSettings" id="LabelSettings_3lt45"]
+font_size = 48
+
+[node name="Node" type="Node"]
+script = ExtResource("1_vnocl")
+
+[node name="ScreenInformations" type="Label" parent="."]
+z_index = 1
+offset_right = 1152.0
+offset_bottom = 468.0
+label_settings = SubResource("LabelSettings_17pgf")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(576, 325)
+scale = Vector2(1.06667, 650)
+texture = SubResource("GradientTexture1D_78vdv")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 934.0
+offset_top = 10.0
+offset_right = 1190.0
+offset_bottom = 98.0
+text = "score : 0"
+label_settings = SubResource("LabelSettings_3lt45")
+
+[node name="banger" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_436d4")
+volume_db = -13.302
+
+[node name="bruh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_7up6h")

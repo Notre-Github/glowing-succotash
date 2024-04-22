@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddmk0igq0ds2d"]
+
+[ext_resource type="Texture2D" uid="uid://ceekm54338us1" path="res://res/sprites/ui/yosyo_roule_en_velo/button_base.png" id="1_64b2m"]
+[ext_resource type="Texture2D" uid="uid://end8wlm06jep" path="res://res/sprites/ui/yosyo_roule_en_velo/button_pressed.png" id="2_2dmhy"]
+[ext_resource type="Script" path="res://res/objects/yosyo_roule_en_velo/Button.gd" id="2_ywt18"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_thgqc"]
+font_size = 64
+
+[node name="TextureButton" type="TextureButton"]
+custom_minimum_size = Vector2(128, 128)
+offset_right = 40.0
+offset_bottom = 40.0
+action_mode = 0
+texture_normal = ExtResource("1_64b2m")
+texture_pressed = ExtResource("2_2dmhy")
+stretch_mode = 0
+script = ExtResource("2_ywt18")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+text = "1"
+label_settings = SubResource("LabelSettings_thgqc")
+horizontal_alignment = 1
+vertical_alignment = 1
