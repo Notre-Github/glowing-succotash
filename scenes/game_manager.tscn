@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cs7p25dnymgvr"]
+
+[ext_resource type="PackedScene" uid="uid://co2f38ch410a6" path="res://scenes/clicker.tscn" id="1_j4ms5"]
+
+[node name="Game-Manager" type="Node"]
+
+[node name="Clicker" parent="." instance=ExtResource("1_j4ms5")]
+position = Vector2(509, 182)
